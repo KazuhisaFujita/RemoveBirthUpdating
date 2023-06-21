@@ -52,8 +52,8 @@ class SOMRB:
         # Calculate the initial position of a unit on the 2dimensional space.
         self.pos = np.zeros((self.NUM, 2), dtype=np.int64)
         for i in range(self.NUM):
-            self.pos[i][0] = i//self.side - self.side//2
-            self.pos[i][1] = i%self.side - self.side//2
+            self.pos[i][0] = i//self.side
+            self.pos[i][1] = i%self.side
 
         # Connect neighbor units.
         for i in range(self.NUM):
